@@ -164,7 +164,7 @@
     <div class="modal modal-order">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__paragraph">Выберите размер:</p>
-      <div class="modal-sizes">
+      <form class="modal-sizes" method="post" action="https://echo.htmlacademy.ru">
         <label class="modal-size">
           <input class="visually-hidden" type="checkbox">
           S
@@ -177,8 +177,8 @@
           <input class="visually-hidden" type="checkbox">
           L
         </label>
-      </div>
-      <button class="modal__btn">Добавить</button>
+      </form>
+      <button class="modal__btn" type="submit">Добавить</button>
     </div>
   </div>
 
