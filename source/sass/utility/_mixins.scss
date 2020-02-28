@@ -1,0 +1,17 @@
+@mixin text-normal {
+  font: {
+    family: $font-stack;
+    weight: 400;
+  }
+
+  color: $color--slave;
+}
+
+@mixin text-bold {
+  font: {
+    family: $font-stack;
+    weight: 700;
+  }
+
+  color: $color--main;
+}
