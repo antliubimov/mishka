@@ -12,16 +12,28 @@ var rename = require('gulp-rename');
 var server = require('browser-sync');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var {pipeline} = require('readable-stream');
+var {
+  pipeline
+} = require('readable-stream');
 var del = require('del');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
+
+gulp.task('copy', function () {
+  return gulp.src([
+      'source/fonts/**/*.{woff,woff2}'
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest('build'));
+});
+
 
 gulp.task('css', function () {
   return gulp.src('source/sass/**/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(sass({
+    .pipe(sass.sync({
       includePaths: require('scss-resets').includePaths
     }))
     .pipe(postcss([autoprefixer()]))
@@ -34,7 +46,7 @@ gulp.task('minifyCSS', function () {
     })
     .pipe(csso())
     .pipe(rename('style.min.css'))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
@@ -83,12 +95,18 @@ gulp.task("server", function () {
   });
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css', 'minifyCSS'));
-  gulp.watch('source/*.html').on('change', server.reload);
-  gulp.watch('source/js/**/*.js', gulp.series('compress')).on('change', server.reload);
+  gulp.watch('source/*.html', gulp.series('html', 'refresh'));
+  gulp.watch('source/js/**/*.js', gulp.series('compress', 'refresh'));
+});
+
+gulp.task('refresh', function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task('build', gulp.series(
   'clean',
+  'copy',
   'css',
   'minifyCSS',
   'compress',
