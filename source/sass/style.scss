@@ -1,3 +1,6 @@
+// Utilities
+@import 'utility/config';
 @import 'normalize';
 
-@import './utility/config';
+// Base Rules
+@import 'blocks/main-nav__link';
