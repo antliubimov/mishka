@@ -1,116 +1,20 @@
 "use strict";
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
-var sourcemaps = require('gulp-sourcemaps');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-sass.compiler = require('node-sass');
-var csso = require('gulp-csso');
-var rename = require('gulp-rename');
-var server = require('browser-sync');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
-var {
-  pipeline
-} = require('readable-stream');
-var del = require('del');
-var posthtml = require('gulp-posthtml');
-var include = require('posthtml-include');
+const gulp = require('gulp');
+const serve = require('./gulp/tasks/serve');
+const html = require('./gulp/tasks/html');
+const styles = require('./gulp/tasks/styles');
+const script = require('./gulp/tasks/script');
+const fonts = require('./gulp/tasks/fonts');
+const images = require('./gulp/tasks/images');
+const clean = require('./gulp/tasks/clean');
 
-gulp.task('copy', function () {
-  return gulp.src([
-      'source/fonts/**/*.{woff,woff2}'
-    ], {
-      base: "source"
-    })
-    .pipe(gulp.dest('build'));
-});
+const dev = gulp.parallel(html, styles, script, fonts);
+
+const build = gulp.series(clean, dev);
+
+module.exports.clean = clean;
+module.exports.start = gulp.series(build, serve);
+module.exports.build = build;
 
 
-gulp.task('css', function () {
-  return gulp.src('source/sass/**/*.scss')
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass.sync({
-      includePaths: require('scss-resets').includePaths
-    }))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest('build/css'));
-});
-
-gulp.task('minifyCSS', function () {
-  return gulp.src('build/css/style.css', {
-      base: "source"
-    })
-    .pipe(csso())
-    .pipe(rename('style.min.css'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('build/css'))
-    .pipe(server.stream());
-});
-
-gulp.task('images', function () {
-  return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(imagemin([
-      imagemin.optipng({
-        optimizationLevel: 3
-      }),
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.svgo()
-    ]))
-    .pipe(gulp.dest('source/img'));
-});
-
-gulp.task('compress', function () {
-  return pipeline(
-    gulp.src('source/js/**/*.js'),
-    uglify(),
-    gulp.dest('build/js')
-  )
-});
-
-gulp.task('clean', function () {
-  return del('build');
-});
-
-gulp.task('html', function () {
-  return gulp.src('source/*.html')
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task("server", function () {
-  server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css', 'minifyCSS'));
-  gulp.watch('source/*.html', gulp.series('html', 'refresh'));
-  gulp.watch('source/js/**/*.js', gulp.series('compress', 'refresh'));
-});
-
-gulp.task('refresh', function (done) {
-  server.reload();
-  done();
-});
-
-gulp.task('build', gulp.series(
-  'clean',
-  'copy',
-  'css',
-  'minifyCSS',
-  'compress',
-  'html'
-));
-
-gulp.task("start", gulp.series('build', 'server'));
