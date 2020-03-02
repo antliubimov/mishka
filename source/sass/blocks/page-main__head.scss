@@ -1,0 +1,33 @@
+.page-main__title {
+    font-size: 27px;
+    @include text-bold;
+    line-height: 30px;
+    text-align: center;
+}
+
+.page-main__list {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.page-main__item {
+    padding: 28px 0;
+    background-color: $bg-color--first;
+}
+
+.page-main__item:last-child {
+    background-color: $bg-color--second;
+}
+
+.page-main__link {
+    width: 100%;
+
+    font-size: 19px;
+    @include text-bold;
+    line-height: 24px;
+    color: $color--third;
+}
+

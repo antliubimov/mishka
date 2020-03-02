@@ -1,3 +1,8 @@
 .main-nav__link {
+
+  padding: 27px 0;
+  padding-left: 46px;
   @include text-bold;
+  font-size: 17px;
+  line-height: 24px;
 }
