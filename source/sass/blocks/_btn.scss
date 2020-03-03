@@ -7,19 +7,35 @@
     font-size: 17px;
     line-height: 20px;
     @include text-bold;
+}
 
+.btn-primary {
     color: $color--slave;
     background-color: $bg-color--main;
     border: 2px solid $color--slave;
+
+    &:hover,
+    &:focus {
+        color: $color--third;
+        background-color: $color--slave;
+    }
+
+    &:active {
+        color: darken($color--third, 30%);
+    }
 }
 
-.btn:hover,
-.btn:focus {
+.btn-modal {
     color: $color--third;
-    background-color: $color--slave;
-}
+    background-color: $bg-color--first;
+    border: none;
 
-.btn:active {
-    color: darken($color--third, 30%);
-    background-color: $color--slave;
+    &:hover,
+    &:focus {
+        background-color: $bg-color--second;
+    }
+
+    &:active {
+        color: darken($color--third, 30%);
+    }
 }
