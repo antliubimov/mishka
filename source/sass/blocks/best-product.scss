@@ -1,0 +1,31 @@
+.best-product__title {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 30px;
+    @include text-bold;
+}
+
+.best-product__subtitle {
+    font-size: 17px;
+    line-height: 20px;
+    @include text-bold;
+
+    color: $color--fourth;
+}
+
+.best-product__about {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.best-product__desc {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.best-product__price {
+    font-size: 17px;
+    line-height: 24px;
+    @include text-bold;
+}

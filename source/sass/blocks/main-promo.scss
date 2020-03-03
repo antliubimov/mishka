@@ -1,11 +1,11 @@
-.page-main__title {
+.main-promo__title {
     font-size: 27px;
     @include text-bold;
     line-height: 30px;
     text-align: center;
 }
 
-.page-main__list {
+.main-promo__list {
     padding: 0;
 
     display: flex;
@@ -13,17 +13,18 @@
     list-style: none;
 }
 
-.page-main__item {
+.main-promo__item {
     padding: 28px 0;
     background-color: $bg-color--first;
 }
 
-.page-main__item:last-child {
+.main-promo__item:last-child {
     background-color: $bg-color--second;
 }
 
-.page-main__link {
-    width: 100%;
+.main-promo__link {
+
+    padding-right: 130px;
 
     font-size: 19px;
     @include text-bold;
