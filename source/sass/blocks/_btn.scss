@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: $width--mobile--wrap;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 17px;
+    line-height: 20px;
+    @include text-bold;
+
+    color: $color--slave;
+    background-color: $bg-color--main;
+    border: 2px solid $color--slave;
+}
+
+.btn:hover,
+.btn:focus {
+    color: $color--third;
+    background-color: $color--slave;
+}
+
+.btn:active {
+    color: darken($color--third, 30%);
+    background-color: $color--slave;
+}
