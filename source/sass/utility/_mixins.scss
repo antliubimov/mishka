@@ -17,3 +17,9 @@
 
   color: $color--main;
 }
+
+@mixin title-mobile{
+  font-size: $font-size-title--mobile;
+  line-height: $line-height-title--mobile;
+  @include text-bold;
+}
