@@ -1,0 +1,30 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {}
+
+.main-nav__link {
+  display: block;
+  padding: 27px 0;
+  padding-left: 46px;
+  @include text-bold;
+  font-size: 17px;
+  line-height: 24px;
+  border-top: 1px solid $bg-color--modal-size;
+}
+
+.main-nav__text {
+  display: none;
+}
+
+.site-list-second {
+  display: none;
+}
