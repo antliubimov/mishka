@@ -10,39 +10,49 @@
 
 <body>
   <header class="page-header">
+
     <div class="wrapper">
-      <a href="#" class=" page-header__logo">
-        <img class="page-header__logo-image" src="" alt="Интернет-магазин Mishka">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
+        <div class="main-nav__top">
+          <a href="#" class="page-header__logo">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/svg/mishka-logo--desktop.svg">
+              <source media="(min-width:768px)" srcset="img/svg/mishka-logo--tablet.svg">
+              <img class="page-header__logo-image" src="img/svg/mishka-logo--mobile.svg" alt="Интернет-магазин Mishka">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="nav-list__item site-list__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav-list__item site-list__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
-          <li class="nav-list__item user-list__item">
-            <a href="" class="main-nav__link">Поиск по сайту</a>
+          <li class="nav-list__item user-list__item search">
+            <a class="main-nav__link user-list__link search__link"><span class="search__text">Поиск по
+                сайту</span></a>
           </li>
           <li class="nav-list__item user-list__item">
-            <a href="" class="main-nav__link">Корзина</a>
+            <a href="#" class="main-nav__link user-list__link main-cart">Корзина: <span class="link__text">пока
+                пуста</span></a>
           </li>
         </ul>
         <ul class="main-nav__list site-list-second">
           <li class="nav-list__item site-second-list__item">
-            <a href="#" class="main-nav__link">Новое поступление</a>
+            <a href="#" class="main-nav__link site-list-second__link">Новое поступление</a>
           </li>
           <li class="nav-list__item site-second-list__item">
-            <a href="#" class="main-nav__link">Распродажа</a>
+            <a href="#" class="main-nav__link site-list-second__link">Распродажа</a>
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
       </nav>
     </div>
+
   </header>
 
   <main class="page-main">

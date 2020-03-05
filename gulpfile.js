@@ -9,7 +9,7 @@ const fonts = require('./gulp/tasks/fonts');
 const images = require('./gulp/tasks/images');
 const clean = require('./gulp/tasks/clean');
 
-const dev = gulp.parallel(html, styles, script, fonts);
+const dev = gulp.parallel(html, styles, script, fonts, images);
 
 const build = gulp.series(clean, dev);
 
