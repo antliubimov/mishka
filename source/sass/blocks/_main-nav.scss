@@ -157,6 +157,9 @@
 
   .main-nav__top {
     width: 298px;
+  }
+
+  .main-nav__top--inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,16 +177,6 @@
   .site-list {
     position: relative;
     order: -1;
-  }
-
-  .site-list::before {
-    // content: "";
-    // position: absolute;
-    // width: $width-desktop;
-    // bottom: 0;
-    // margin-left: ($width-desktop-wrap - $width-desktop)/2;
-    // height: 1px;
-    // background-color: $bg-color--modal-size;
   }
 
   .site-list__link {
