@@ -1,41 +1,41 @@
 .btn {
-    display: inline-block;
-    box-sizing: border-box;
-    width: $width-mobile-wrap;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 17px;
-    line-height: 20px;
-    @include text-bold;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 17px;
+  line-height: 20px;
+  @include text-bold;
 }
 
 .btn-primary {
-    color: $color--slave;
-    background-color: $bg-color--main;
-    border: 2px solid $color--slave;
+  color: $color--slave;
+  background-color: $bg-color--main;
+  border: 2px solid $color--slave;
 
-    &:hover,
-    &:focus {
-        color: $color--third;
-        background-color: $color--slave;
-    }
+  &:hover,
+  &:focus {
+    color: $color--third;
+    background-color: $color--slave;
+  }
 
-    &:active {
-        color: darken($color--third, 30%);
-    }
+  &:active {
+    color: darken($color--third, 30%);
+  }
 }
 
 .btn-modal {
-    color: $color--third;
-    background-color: $bg-color--first;
-    border: none;
+  color: $color--third;
+  background-color: $bg-color--first;
+  border: none;
 
-    &:hover,
-    &:focus {
-        background-color: $bg-color--second;
-    }
+  &:hover,
+  &:focus {
+    background-color: $bg-color--second;
+  }
 
-    &:active {
-        color: darken($color--third, 30%);
-    }
+  &:active {
+    color: darken($color--third, 30%);
+  }
 }

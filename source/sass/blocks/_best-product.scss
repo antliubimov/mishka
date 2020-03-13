@@ -11,7 +11,7 @@
 .best-product__top {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   margin-bottom: 30px;
 }
 
@@ -33,14 +33,18 @@
 }
 
 .best-product__description {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .best-product__about {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   font-size: 15px;
   line-height: 24px;
+}
+
+.best-product__picture {
+  margin-bottom: 27px;
 }
 
 .best-product__table {
@@ -50,7 +54,7 @@
 }
 
 .best-product__price {
-  padding: 27px 0;
+  margin-bottom: 27px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
@@ -82,6 +86,8 @@
   .best-product__top {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
   }
 
   .best-product__title {
@@ -91,8 +97,7 @@
   }
 
   .best-product__subtitle {
-    margin-left: 27px;
-    margin-right: 27px;
+    padding-left: 67px;
     text-align: center;
   }
 
@@ -102,15 +107,66 @@
     padding-right: 43px;
   }
 
-  .best-product__order {}
+  .best-product__description {
+    margin-bottom: 55px;
+  }
+
+  .best-product__about {
+    margin-bottom: 50px;
+  }
 
   .best-product__picture {
     order: 1;
     position: absolute;
-    top: 75px;
+    top: 95px;
     left: 334px;
     max-width: 334px;
+    margin: 0;
   }
 }
 
-@media (min-width: $width-desktop) {}
+@media (min-width: $width-desktop) {
+  .best-product {
+    padding-top: 71px;
+    padding-bottom: 71px;
+  }
+
+  .best-product__inner {}
+
+  .best-product__top {
+    margin-bottom: 60px;
+  }
+
+  .best-product__title {
+    order: 0;
+    width: 875px;
+    font-size: 53px;
+    line-height: 57px;
+    overflow: hidden;
+  }
+
+  .best-product__subtitle {
+    padding-left: 45px;
+  }
+
+  .best-product__about {
+    margin-bottom: 60px;
+  }
+
+  .best-product__description,
+  .best-product__buy {
+    width: 350px;
+    margin-left: 175px;
+    padding-right: 58px;
+  }
+
+  .best-product__description {
+    margin-bottom: 110px;
+  }
+
+  .best-product__picture {
+    max-width: 525px;
+    top: 0;
+    left: 525px;
+  }
+}
