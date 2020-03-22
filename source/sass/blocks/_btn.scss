@@ -1,18 +1,18 @@
 .btn {
+  @include text-bold;
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  text-align: center;
   padding: 12px 0;
   font-size: 17px;
   line-height: 20px;
-  @include text-bold;
+  text-align: center;
 }
 
 .btn-primary {
   color: $color--slave;
-  background-color: $bg-color--main;
   border: 2px solid $color--slave;
+  background-color: $bg-color--main;
 
   &:hover,
   &:focus {
@@ -27,8 +27,8 @@
 
 .btn-modal {
   color: $color--third;
-  background-color: $bg-color--first;
   border: none;
+  background-color: $bg-color--first;
 
   &:hover,
   &:focus {

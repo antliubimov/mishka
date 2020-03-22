@@ -1,25 +1,33 @@
 // Mixins
 
 @mixin text-normal {
+  color: $color--slave;
   font: {
     family: $font-stack;
     weight: 400;
   }
-
-  color: $color--slave;
 }
 
 @mixin text-bold {
+  color: $color--main;
   font: {
     family: $font-stack;
     weight: 700;
   }
-
-  color: $color--main;
 }
 
 @mixin title-mobile{
+  @include text-bold;
   font-size: $font-size-title--mobile;
   line-height: $line-height-title--mobile;
-  @include text-bold;
+}
+
+@mixin title-tablet {
+  font-size: $font-size-title--tablet;
+  line-height: $line-height-title--tablet;
+}
+
+@mixin title-desktop {
+  font-size: $font-size-title--desktop;
+  line-height: $line-height-title--desktop;
 }

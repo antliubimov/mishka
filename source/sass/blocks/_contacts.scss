@@ -1,28 +1,26 @@
 // Contacts
-
 .contacts__title {
-    @include title-mobile;
+  @include title-mobile;
 }
 
 .contacts__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .contacts__item {
-    display: flex;
-
-    font-size: 15px;
-    line-height: 30px;
+  display: flex;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .contact__name {
-    width: 77px;
+  width: 77px;
 }
 
 .contacts__mail {
-    padding-bottom: 4px;
-    color: inherit;
-    border-bottom: 1px solid $bg-color--first;
+  padding-bottom: 4px;
+  color: inherit;
+  border-bottom: 1px solid $bg-color--first;
 }

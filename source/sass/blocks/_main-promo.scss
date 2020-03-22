@@ -1,89 +1,87 @@
 // main-promo.scss
-
 .main-promo {
-    background-color: $bg-color--promo;
+  background-color: $bg-color--promo;
 }
 
 .main-promo__title {
-    padding-top: 72px;
-    padding-bottom: 120px;
-    font-size: 27px;
-    @include text-bold;
-    line-height: 30px;
-    text-align: center;
+  @include text-bold;
+  padding-top: 72px;
+  padding-bottom: 120px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .main-promo__list {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .main-promo__item {
-    background-color: $bg-color--first;
+  background-color: $bg-color--first;
 }
 
 .main-promo__item--toy {
-    background-color: $bg-color--second;
+  background-color: $bg-color--second;
 }
 
 .promo-item__wrapper {
-    width: $width-mobile-wrap;
-    margin: 0 auto;
+  width: $width-mobile-wrap;
+  margin: 0 auto;
 }
 
 .main-promo__link {
-    display: inline-block;
-    padding: 28px 0;
-    padding-right: 130px;
-    font-size: 19px;
-    @include text-bold;
-    line-height: 24px;
-    color: $color--third;
+  @include text-bold;
+  display: inline-block;
+  padding: 28px 0;
+  padding-right: 130px;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color--third;
 }
 
 @media (min-width: $width-tablet) {
-    .main-promo {
-      margin-top: -67px;
-    }
+  .main-promo {
+    margin-top: -67px;
+  }
 
-    .main-promo__title {
-      padding-top: 227px;
-      padding-bottom: 365px;
-      font-size: 43px;
-      line-height: 50px;
-    }
+  .main-promo__title {
+    @include title-tablet;
+    padding-top: 227px;
+    padding-bottom: 365px;
+  }
 
-    .main-promo__list {
-        flex-direction: row;
-        justify-content: center;
-    }
+  .main-promo__list {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .promo-item__wrapper {
-        width: $width-tablet-wrap / 2;
-    }
+  .promo-item__wrapper {
+    width: $width-tablet-wrap / 2;
+  }
 
-    .main-promo__link {
-        padding-left: 35px;
-        font-size: 20px;
-        line-height: 30px;
-    }
+  .main-promo__link {
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $width-desktop) {
-    .main-promo {
-        margin-top: -86px;
-      }
+  .main-promo {
+    margin-top: -86px;
+  }
 
-      .main-promo__title {
-        padding-top: 239px;
-    }
+  .main-promo__title {
+    padding-top: 239px;
+  }
 
-    .promo-item__wrapper {
-        width: $width-desktop-wrap / 2;
-    }
+  .promo-item__wrapper {
+    width: $width-desktop-wrap / 2;
+  }
 
-    .main-promo__link {
-        padding-right: 305px;
-    }
+  .main-promo__link {
+    padding-right: 305px;
+  }
 }

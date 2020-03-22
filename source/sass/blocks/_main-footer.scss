@@ -1,18 +1,16 @@
 // Main Footer
-
 .main-footer {
-    background-color: $bg-color--footer;
+  background-color: $bg-color--footer;
 }
 
 .social__list {
-    display: flex;
-    justify-content: space-between;
-
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .footer-copyright__text {
-    font-size: 19px;
-    line-height: 18px;
-    @include text-bold;
+  @include text-bold;
+  font-size: 19px;
+  line-height: 18px;
 }

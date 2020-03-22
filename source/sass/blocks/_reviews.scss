@@ -1,21 +1,20 @@
 // Reviews
-
 .reviews__title {
-    @include title-mobile;
+  @include title-mobile;
 }
 
 .review__text {
-    font-size: 15px;
-    line-height: 30px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .review__author {
-    font-size: 17px;
-    line-height: 24px;
-    @include text-bold;
+  @include text-bold;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .review__author__instagram {
-    font-size: 17px;
-    line-height: 30px;
+  font-size: 17px;
+  line-height: 30px;
 }
