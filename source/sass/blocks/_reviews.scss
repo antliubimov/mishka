@@ -43,6 +43,14 @@
   .reviews__title {
     @include title-tablet;
   }
+
+  .review__text {
+    font-size: 17px;
+  }
+
+  .review__author {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: $width-desktop) {
