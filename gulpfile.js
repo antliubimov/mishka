@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const gulp = require('gulp');
 const serve = require('./gulp/tasks/serve');
@@ -16,5 +16,3 @@ const build = gulp.series(clean, dev);
 module.exports.clean = clean;
 module.exports.start = gulp.series(build, serve);
 module.exports.build = build;
-
-

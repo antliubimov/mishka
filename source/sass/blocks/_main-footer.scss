@@ -1,5 +1,6 @@
 // Main Footer
 .main-footer {
+  padding: 20px 0;
   background-color: $bg-color--footer;
 }
 
@@ -13,4 +14,11 @@
   @include text-bold;
   font-size: 19px;
   line-height: 18px;
+}
+
+@media screen and (min-width: $width-tablet) {
+  .main-footer__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -5,11 +5,10 @@ const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 
 module.exports = function html() {
-  return gulp.src('source/*.html')
+  return gulp
+    .src('source/*.html')
     .pipe(plumber())
-    .pipe(posthtml([
-      include()
-    ]))
+    .pipe(posthtml([include()]))
     .pipe(htmlValidator())
     .pipe(gulp.dest('build'));
-}
+};
