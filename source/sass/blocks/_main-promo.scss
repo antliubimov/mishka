@@ -5,11 +5,18 @@
 
 .main-promo__title {
   @include text-bold;
-  padding-top: 72px;
-  padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+.main-promo__title--image {
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+
+.main-promo__title--no-image {
+  padding: 73px 0;
 }
 
 .main-promo__list {
@@ -48,6 +55,13 @@
 
   .main-promo__title {
     @include title-tablet;
+  }
+
+  .main-promo__title--no-image {
+    padding: 100px 0 83px;
+  }
+
+  .main-promo__title--image {
     padding-top: 227px;
     padding-bottom: 365px;
   }
@@ -73,8 +87,12 @@
     margin-top: -86px;
   }
 
-  .main-promo__title {
+  .main-promo__title--image {
     padding-top: 239px;
+  }
+
+  .main-promo__title--no-image {
+    padding: 100px 0 93px;
   }
 
   .promo-item__wrapper {
