@@ -1,12 +1,44 @@
 // Modal
-.modal__title {
+.modal-overlay {
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  position: fixed; /* Sit on top of the page content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  cursor: pointer;
+  background-color: rgba(255,255,255, 0.9);
+}
 
+.modal {
+  z-index: 3;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding-top: 33px;
+  padding-bottom: 46px;
+  background-color: $bg-color--main;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid $bg-color--modal-size--hover;
+}
+
+.modal__order {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal__title {
   @include title-mobile;
+  margin-bottom: 20px;
   padding-right: 55px;
   padding-left: 60px;
+  text-transform: uppercase;
 }
 
 .modal__paragraph {
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 30px;
   text-align: center;
@@ -15,6 +47,7 @@
 .modal__sizes {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .modal__size {
@@ -37,5 +70,33 @@
   &--checked {
     border-color: $bg-color--modal-size--active;
   }
+}
 
+@media screen and (min-width: $width-tablet) {
+  .modal {
+    width: 568px;
+    padding-top: 45px;
+    padding-bottom: 46px;
+  }
+
+  .modal__order {
+    width: 350px;
+  }
+
+  .modal__title {
+    padding: 0;
+    font-size: 30px;
+    line-height: 57px;
+    white-space: nowrap;
+
+  }
+
+  .modal__paragraph {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal__size {
+    width: 108px;
+  }
 }
