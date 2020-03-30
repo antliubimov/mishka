@@ -83,7 +83,7 @@
           </div>
           <div class="order__field order__field--color">
             <p class="order__legend order__legend--color">Цвет</p>
-            <div class="order__wrapper">
+            <div class="order__wrapper order__wrapper--row">
               <label class="order__label checkbox__label">
               <input class="visually-hidden" type="checkbox" name="white" checked>
               Белый
@@ -113,12 +113,21 @@
           <div class="order__field order__field--name">
             <p class="order__legend order__legend--name">ФИО</p>
             <div class="order__wrapper">
-              <label class="order__label order__name" for="first-name">Имя:</label>
-              <input class="order__input order__input--name" id="first-name" type="text" placeholder="Введите ваше имя*">
-              <label class="order__label order__name" for="last-name">Фамилия:</label>
-              <input class="order__input order__input--name" id="last-name" type="text" placeholder="Укажите фамилию*">
-              <label class="order__label order__name" for="surname">Отчество:</label>
-              <input class="order__input order__input--name" id="surname" type="text" placeholder="Отчество, если желаете">
+              <div class="order__wrapper__inner">
+                <label class="order__label order__name" for="first-name">Имя:</label>
+                <input class="order__input order__input--name" id="first-name" type="text"
+                       placeholder="Введите ваше имя*">
+              </div>
+              <div class="order__wrapper__inner">
+                <label class="order__label order__name" for="last-name">Фамилия:</label>
+                <input class="order__input order__input--name" id="last-name" type="text"
+                       placeholder="Укажите фамилию*">
+                </div>
+                <div class="order__wrapper__inner">
+                  <label class="order__label order__name" for="surname">Отчество:</label>
+                  <input class="order__input order__input--name" id="surname" type="text"
+                         placeholder="Отчество, если желаете">
+                </div>
             </div>
           </div>
           <div class="order__field order__field--tel">
