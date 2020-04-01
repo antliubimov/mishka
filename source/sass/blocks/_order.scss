@@ -79,6 +79,11 @@
   flex-direction: column;
 }
 
+.order__wrapper__inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .order__input--name {
   margin-bottom: 22px;
 }
@@ -145,6 +150,7 @@
 }
 
 .order__addition {
+  height: 142px;
   padding: 15px;
   font: inherit;
   border: 2px solid $color--main;
@@ -171,38 +177,69 @@
 
   .order__field {
     display: flex;
+    align-items: baseline;
   }
 
   .order__field--type {
     margin-bottom: 69px;
   }
 
-  .order__field--color {
+  .order__field--color,
+  .order__field--tel,
+  .order__field--mail {
     position: relative;
     margin: 0;
-    padding-top: 65px;
-    padding-bottom: 11px;
     background-color: $bg-color--footer;
   }
 
-  .order__field--color::before {
+  .order__field--color {
+    padding-top: 65px;
+    padding-bottom: 11px;
+  }
+
+  .order__field--name {
+    padding-top: 65px;
+    padding-bottom: 3px;
+  }
+
+  .order__field--tel {
+    padding-top: 63px;
+    padding-bottom: 34px;
+  }
+
+  .order__field--mail {
+    padding-top: 0;
+    padding-bottom: 48px;
+  }
+
+  .order__field--color::before,
+  .order__field--tel::before,
+  .order__field--mail::before {
     position: absolute;
+    z-index: -1;
     right: 50%;
     left: 50%;
     width: 100vw;
     height: 100%;
-    margin-top: -65px;
     margin-right: -50vw;
     margin-left: -50vw;
     content: '';
     background-color: $bg-color--footer;
   }
 
-  .order__field--name {
-    padding-top: 65px;
+  .order__field--color::before {
+    margin-top: -65px;
   }
 
+  .order__field--tel::before {
+    margin-top: -63px;
+  }
 
+  .order__field--add {
+    margin-bottom: 0;
+    padding-top: 51px;
+    padding-bottom: 53px;
+  }
 
   .order__legend {
     min-width: 167px;
@@ -213,7 +250,7 @@
   }
 
   .order__wrapper__inner {
-    display: flex;
+    flex-direction: row;
     justify-content: stretch;
     width: 501px;
   }
@@ -222,20 +259,26 @@
     margin-right: 25px;
   }
 
+  .order__input,
+  .order__label {
+    font-size: 19px;
+  }
+
   .order__input--name {
     margin-top: -3px;
     margin-bottom: 39px;
     padding-left: 15px;
-    font-size: 19px;
+  }
+
+  .order__tel,
+  .order__email {
+    padding-left: 19px;
+    background-color: $bg-color--footer;
   }
 
   .order__wrapper--row {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .order__label {
-    font-size: 19px;
   }
 
   .radio__label,
@@ -277,6 +320,28 @@
   .checkbox__label:not( :last-child ) {
     margin-bottom: 58px;
   }
+
+  .order__addition {
+    height: 142px;
+  }
+
+  .form__submit__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__submit {
+    order: -1;
+    width: 230px;
+  }
+
+  .form__footnote {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
 
 }
 
