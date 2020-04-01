@@ -341,17 +341,43 @@
     font-size: 17px;
     line-height: 30px;
   }
-
-
 }
 
 @media screen and (min-width: $width-desktop) {
   .order {
-    padding-top: 128px;
+    padding-top: 124px;
   }
 
   .order__desc {
-    padding-bottom: 53px;
+    padding-right: 175px;
     padding-left: 175px;
+  }
+
+  .order__legend {
+    min-width: 175px;
+    text-align: center;
+  }
+
+  .checkbox__label {
+    margin-right: 21px;
+  }
+
+  .order__wrapper__inner {
+    width: 700px;
+  }
+
+  .order__field--tel,
+  .order__field--mail,
+  .order__field--add {
+    padding-right: 175px;
+  }
+
+  .order__field--add  {
+    padding-bottom: 48px;
+  }
+
+  .form__submit__wrapper {
+    width: 700px;
+    margin-left: 175px;
   }
 }

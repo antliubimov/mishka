@@ -85,7 +85,11 @@
 
 @media (min-width: $width-desktop) {
   .main-promo {
-    margin-top: -86px;
+    margin-top: -63px;
+  }
+
+  .main-promo__title {
+    @include title-desktop;
   }
 
   .main-promo__title--image {
@@ -93,7 +97,7 @@
   }
 
   .main-promo__title--no-image {
-    padding: 100px 0 93px;
+    padding: 95px 0 100px;
   }
 
   .promo-item__wrapper {
