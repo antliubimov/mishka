@@ -1,11 +1,12 @@
 // About-us
 .about-us {
-  padding-top: 35px;
-  padding-bottom: 58px;
+  padding-top: 28px;
+  padding-bottom: 56px;
 }
 
 .about-us__title {
   @include title-mobile;
+  margin-bottom: 2px;
 }
 
 .about-us__list {
@@ -16,7 +17,7 @@
 
 .about-us__item {
   @include text-bold;
-  padding-top: 55px;
+  padding-top: 83px;
   font-size: 17px;
   line-height: 20px;
 }
