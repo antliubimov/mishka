@@ -62,8 +62,12 @@
   }
 
   .main-promo__title--image {
-    padding-top: 227px;
-    padding-bottom: 365px;
+    padding-top: 153px;
+    padding-bottom: 373px;
+  }
+
+  .main-promo__title--image br {
+    display: none;
   }
 
   .main-promo__list {
@@ -76,6 +80,7 @@
   }
 
   .main-promo__link {
+    padding-top: 27px;
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
