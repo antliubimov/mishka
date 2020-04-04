@@ -1,16 +1,21 @@
 // Contacts
 .contacts {
+  padding-top: 37px;
   padding-bottom: 39px;
+}
+.contacts--inner {
+  margin-bottom: 37px;
 }
 
 .contacts__title {
-  @include title-mobile;
-  margin-bottom: 37px;
+  @include text-bold;
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
@@ -22,7 +27,7 @@
 }
 
 .contacts__item--mail {
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 .contact__name {
@@ -30,15 +35,19 @@
 }
 
 .contacts__mail {
-  padding-bottom: 4px;
   color: inherit;
   border-bottom: 1px solid $bg-color--first;
 }
 
 .contacts__map {
   width: 100vw;
-  height: 320px;
+  height: 457px;
   margin-bottom: 39px;
+}
+
+.contacts__map__image {
+  display: block;
+  margin: auto;
 }
 
 @media screen and (min-width: $width-tablet) {
