@@ -1,6 +1,6 @@
 .best-product {
   padding-top: 27px;
-  padding-bottom: 35px;
+  padding-bottom: 42px;
 }
 
 .best-product__inner {
@@ -42,7 +42,12 @@
 }
 
 .best-product__picture {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
+}
+
+.best-product__img {
+  width: 260px;
+  height: 315px;
 }
 
 .best-product__table {
@@ -53,7 +58,7 @@
 
 .best-product__price {
   @include text-bold;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   font-size: 17px;
   line-height: 24px;
   color: $color--slave;
@@ -69,10 +74,7 @@
   width: 94px;
 }
 
-.best-product__img {
-  width: 260px;
-  height: 315px;
-}
+
 
 
 @media (min-width: $width-tablet) {
