@@ -77,7 +77,8 @@
 
 @media screen and (min-width: $width-desktop) {
   .about-us {
-    padding: 75px 0 85px;
+    padding-top: 60px;
+    padding-bottom: 90px;
   }
 
   .about-us__inner {
@@ -87,6 +88,7 @@
 
   .about-us__title {
     @include title-desktop;
+    padding-bottom: 101px;
   }
 
   .about-us__item {
