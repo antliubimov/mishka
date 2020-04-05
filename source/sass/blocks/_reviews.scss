@@ -92,11 +92,21 @@
 
 @media screen and (min-width: $width-desktop) {
   .reviews {
-    padding-top: 70px;
-    padding-bottom: 170px;
+    padding-top: 80px;
+    padding-bottom: 186px;
   }
 
   .reviews--inner {
     padding-left: 175px;
+  }
+
+  .reviews__title {
+    @include title-desktop;
+    margin-top: -9px;
+  }
+
+  .review__text {
+    margin-bottom: 38px;
+    padding-right: 100px;
   }
 }
