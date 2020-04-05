@@ -146,14 +146,14 @@
 
 @media (min-width: $width-desktop) {
   .best-product {
-    padding-top: 71px;
-    padding-bottom: 71px;
+    padding-top: 125px;
+    padding-bottom: 96px;
   }
 
   .best-product__inner {}
 
   .best-product__top {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .best-product__title {
@@ -169,7 +169,7 @@
   }
 
   .best-product__about {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .best-product__description,
@@ -180,12 +180,17 @@
   }
 
   .best-product__description {
-    margin-bottom: 110px;
+    margin-bottom: 105px;
   }
 
   .best-product__picture {
-    top: 0;
+    top: -52px;
     left: 525px;
     max-width: 525px;
+  }
+
+  .best-product__img {
+    width: 525px;
+    height: 636px;
   }
 }
