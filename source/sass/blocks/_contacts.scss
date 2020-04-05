@@ -93,7 +93,12 @@
 
 @media screen and (min-width: $width-desktop) {
   .contacts {
+    padding-top: 140px;
     padding-bottom: 105px;
+  }
+
+  .contacts--inner {
+    margin-bottom: 82px;
   }
 
   .contacts--inner,
@@ -111,8 +116,8 @@
 
   .contacts__map {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 71px;
+    right: 100px;
     width: 525px;
   }
 
