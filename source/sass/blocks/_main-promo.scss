@@ -97,7 +97,16 @@
   }
 
   .main-promo__title--image {
-    padding-top: 239px;
+    padding-top: 154px;
+    padding-bottom: 359px;
+  }
+
+  .main-promo__title--image br {
+    display: inline;
+  }
+
+  .main-promo__title--image br:first-child {
+    display: none;
   }
 
   .main-promo__title--no-image {
