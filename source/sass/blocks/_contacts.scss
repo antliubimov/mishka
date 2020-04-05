@@ -53,17 +53,22 @@
 @media screen and (min-width: $width-tablet) {
   .contacts {
     position: relative;
-    padding-bottom: 55px;
+    padding-top: 63px;
+    padding-bottom: 57px;
+  }
+
+  .contacts--inner {
+    margin-bottom: 57px;
   }
 
   .contacts__title {
     @include title-tablet;
+    margin-bottom: 48px;
   }
 
   .contacts__list {
     display: flex;
     align-items: baseline;
-    margin-bottom: 55px;
   }
 
   .contacts__item {
