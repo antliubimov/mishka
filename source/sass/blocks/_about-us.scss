@@ -25,25 +25,53 @@
 @media screen and (min-width: $width-tablet) {
   .about-us {
     padding-top: 48px;
-    padding-bottom: 78px;
+    padding-bottom: 84px;
   }
 
   .about-us__title {
     @include title-tablet;
+    margin: 0;
+    padding-bottom: 103px;
   }
 
   .about-us__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 455px;
   }
 
   .about-us__item {
-    width: 334px;
-    padding-top: 103px;
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 111px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .about-us__item--1 {
+    order: 1;
+  }
+
+  .about-us__item--2 {
+    order: 3;
+  }
+
+  .about-us__item--3 {
+    order: 5;
+    padding-bottom: 0;
+  }
+
+  .about-us__item--4 {
+    order: 2;
+  }
+
+  .about-us__item--5 {
+    order: 4;
+  }
+
+  .about-us__item--6 {
+    order: 6;
+    padding-bottom: 0;
   }
 }
 
