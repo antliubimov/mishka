@@ -37,15 +37,15 @@
 
 .feedback__prev,
 .feedback__next {
-  min-height: 50px;
   width: 50%;
+  min-height: 50px;
   border: 1px solid $bg-color--modal-size;
 }
 
 @media screen and (min-width: $width-tablet) {
   .reviews {
-    padding-top: 80px;
-    padding-bottom: 125px;
+    padding-top: 79px;
+    padding-bottom: 130px;
   }
 
   .reviews--inner {
@@ -58,11 +58,16 @@
     @include title-tablet;
     order: -2;
     margin: 0;
+    margin-top: -2px;
   }
 
   .review__text {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     font-size: 17px;
+  }
+
+  .review__author {
+    margin: 0;
   }
 
   .review__author__name {
@@ -75,12 +80,13 @@
 
   .feedback__buttons {
     width: 171px;
+    margin: 0;
   }
 
   .reviews__write-btn {
     order: -1;
-    width: 171px;
-    margin-bottom: 50px;
+    width: 175px;
+    margin-bottom: 45px;
   }
 }
 
