@@ -1,0 +1,54 @@
+// Products
+.products {
+  margin-bottom: 31px;
+  padding-top: 30px;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item:not( :last-child ) {
+  margin-bottom: 30px;
+}
+
+.product__img {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.product__info {
+  padding-top: 25px;
+  padding-right: 28px;
+  padding-left: 28px;
+  border: 1px solid $bg-color--modal-size;
+}
+
+.product__title {
+  @include text-bold;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.product__desc {
+  margin-bottom: 19px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product__buy {
+  padding-top: 21px;
+  padding-bottom: 27px;
+  border-top: 1px solid $bg-color--modal-size;
+}
+
+.product__price {
+  @include text-bold;
+  font-size: 15px;
+  line-height: 24px;
+}
