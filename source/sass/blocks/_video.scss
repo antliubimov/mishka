@@ -17,9 +17,9 @@
 }
 
 .video__img {
-  margin-bottom: 24px;
   width: 260px;
   height: 150px;
+  margin-bottom: 24px;
 }
 
 .video__desc {
@@ -33,4 +33,46 @@
 .video__btn {
   width: 192px;
   margin-left: 33px;
+}
+
+@media screen and (min-width: $width-tablet) {
+  .video {
+    padding-bottom: 63px;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+
+  .video__title {
+    margin-bottom: 7px;
+    padding-left: 105px;
+    font-size: 20px;
+  }
+
+  .video__img {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 16px;
+  }
+
+  .video__desc {
+    margin-bottom: 35px;
+    padding-right: 39px;
+    padding-left: 39px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .video__btn {
+    width: 584px;
+    margin-left: 41px;
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+
 }
