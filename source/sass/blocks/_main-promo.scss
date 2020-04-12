@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media screen and (min-width: $width-desktop) {
   .main-promo {
     margin-top: -63px;
   }
