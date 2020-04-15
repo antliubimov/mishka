@@ -72,6 +72,7 @@
   }
 
   .video__img {
+    display: block;
     order: -1;
     width: 668px;
     height: 455px;
@@ -103,7 +104,9 @@
   }
 
   .video__img {
-    width: 682px;
+    min-width: 682px;
+    max-width: 682px;
+    height: 455px;
     margin: 0;
   }
 

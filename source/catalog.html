@@ -70,10 +70,16 @@
       <div class="wrapper">
         <ul class="products__list">
           <li class="products__item">
-            <img class="product__img" src="./img/photo-hare-mobile-260.jpg"
-                 sizes="(min-width: 1150px) 316px,(min-width: 768px) 334px, 260px"
-                 srcset="./img/photo-hare-mobile-260.jpg 260w, ./img/photo-hare-mobile-520.jpg 520w, ./img/photo-hare-tablet-334.jpg 334w, ./img/photo-hare-tablet-668.jpg 668w, ./img/photo-hare-desktop-316.jpg 316w, ./img/photo-hare-desktop-632.jpg 632w"
-                 alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)"
+                      srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="product__img" src="./img/photo-hare-mobile@1x.jpg"
+                   srcset="./img/photo-hare-mobile@2x.jpg"
+                   alt="Зайчик-попрыгайчик">
+            </picture>
+
             <div class="product__info">
               <div class="product__about">
                 <a class="product__title" href="#">Зайчик-попрыгайчик</a>
@@ -86,9 +92,13 @@
             </div>
           </li>
           <li class="products__item">
-            <img class="product__img" src="./img/photo-basket-mobile-260.jpg"
-                 sizes="(min-width: 1150px) 316px,(min-width: 768px) 334px, 260px"
-                 srcset="./img/photo-basket-mobile-260.jpg 260w, ./img/photo-basket-mobile-520.jpg 520w, ./img/photo-basket-tablet-334.jpg 334w, ./img/photo-basket-tablet-668.jpg 668w, ./img/photo-basket-desktop-316.jpg 316w, ./img/photo-basket-desktop-632.jpg 632w" alt="Корзина для белья">
+            <picture>
+              <source media="(min-width: 1150px)"
+                      srcset="img/photo-basket-desktop@1x.jpg 1x, img/photo-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/photo-basket-tablet@1x.jpg 1x, img/photo-basket-tablet@2x.jpg 2x">
+              <img class="product__img" src="./img/photo-basket-mobile@1x.jpg"      srcset="./img/photo-basket-mobile@2x.jpg" alt="Корзина для белья">
+            </picture>
             <div class="product__info">
               <div class="product__about">
                 <a class="product__title" href="#">Корзинка для белья</a>
@@ -102,9 +112,16 @@
 
           </li>
           <li class="products__item">
-            <img class="product__img" src="./img/photo-big-basket-mobile-260.jpg"
-                 sizes="(min-width: 1150px) 316px,(min-width: 768px) 334px, 260px"
-                 srcset="./img/photo-big-basket-mobile-260.jpg 260w, ./img/photo-big-basket-mobile-520.jpg 520w, ./img/photo-big-basket-tablet-334.jpg 334w, ./img/photo-big-basket-tablet-668.jpg 668w, ./img/photo-big-basket-desktop-316.jpg 316w, ./img/photo-big-basket-desktop-632.jpg 632w" alt="Большая корзина для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)"
+                      srcset="img/photo-big-basket-desktop@1x.jpg 1x, img/photo-big-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/photo-big-basket-tablet@1x.jpg 1x, img/photo-big-basket-tablet@2x.jpg 2x">
+              <img class="product__img" src="./img/photo-big-basket@1x.jpg"
+                   srcset="./img/photo-big-basket-mobile@2x.jpg" alt="Большая корзина для игрушек">
+            </picture>
+
+
             <div class="product__info">
               <div class="product__about">
                 <a href="" class="product__title">Большая корзинка<br> для
@@ -126,8 +143,13 @@
       <h2 class="visually-hidden">Процесс производства</h2>
       <div class="wrapper video__wrapper">
         <h3 class="video__title video__title--mobile">Процесс производства</h3>
-        <img class="video__img" alt="Процесс производства" src="./img/video-mobile-260.jpg" sizes="(min-width: 1150px) 682px,(min-width: 768px) 668px, 260px"
-             srcset="./img/video-mobile-260.jpg 260w, ./img/video-mobile-520.jpg 520w, ./img/video-tablet-668.jpg 668w, ./img/video-tablet-1336.jpg 1336w, ./img/video-desktop-682.jpg 682w, ./img/video-desktop-1364.jpg 1364w">
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video__img" alt="Процесс производства" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg">
+        </picture>
         <div class="video__info">
           <h3 class="video__title video__title--other">Процесс
           производства</h3>
@@ -135,7 +157,7 @@
             видео
             о
             том, как появляются наши товары.</p>
-          <a class="video__btn btn btn-primary">Сделать заказ</a>
+          <a class="video__btn btn btn-primary" href="#">Сделать заказ</a>
         </div>
       </div>
     </section>
@@ -144,8 +166,8 @@
 
   <footer class="main-footer">
     <div class="wrapper main-footer__inner">
-      <a class="main-footer__logo" href="">
-        <img src="" alt="" class="main-footer__logo-img">
+      <a class="main-footer__logo" href="index.html">
+        <img src="img/svg/mishka-logo-footer.svg" alt="Интернет-магазин Mishka" class="main-footer__logo-img">
       </a>
       <ul class="main-footer__social social__list">
         <li class="social__item">
