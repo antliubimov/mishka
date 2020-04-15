@@ -60,7 +60,7 @@
 
     <section class="main-promo">
       <h2 class="visually-hidden">Главная страница магазина</h2>
-      <div class="wrapper">
+      <div class="wrapper main-promo__background">
         <h3 class="main-promo__title main-promo__title--image">Милые штуки<br> ручной<br> работы для дома</h3>
       </div>
       <div class="main-promo__list">
@@ -106,7 +106,10 @@
           <div class="best-product__picture">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <img class="best-product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Товар недели">
             </picture>
           </div>
