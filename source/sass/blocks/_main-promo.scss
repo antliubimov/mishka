@@ -119,6 +119,18 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .main-promo__svg {
+    &--interior {
+      top: 30px;
+      right: 36px;
+    }
+
+    &--toy {
+      top: 32px;
+      right: 33px;
+    }
+  }
 }
 
 @media screen and (min-width: $width-desktop) {

@@ -58,10 +58,7 @@
     top: 30px;
     left: 3px;
   }
-
 }
-
-
 
 @media screen and (min-width: $width-tablet) {
   .about-us {
@@ -114,6 +111,39 @@
     order: 6;
     padding-bottom: 0;
   }
+
+  .about-us__svg {
+    &--flower {
+      top: -54px;
+      left: 9px;
+    }
+
+    &--money {
+      top: -52px;
+      left: 1px;
+    }
+
+    &--heart {
+      top: -47px;
+      left: 8px;
+    }
+
+    &--ball {
+      top: -50px;
+      left: 3px;
+    }
+
+    &--rocket {
+      top: -49px;
+      left: -6px;
+    }
+
+    &--gift {
+      top: -51px;
+      left: 3px;
+    }
+  }
+
 }
 
 @media screen and (min-width: $width-desktop) {
