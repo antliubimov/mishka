@@ -49,6 +49,28 @@
   display: none;
 }
 
+.search__link {
+  position: relative;
+}
+
+.search__svg {
+  position: absolute;
+  top: 31px;
+  left: 2px;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.main-cart {
+  position: relative;
+}
+
+.cart__svg {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
 .main-nav__text {
   font-size: 15px;
   line-height: 24px;

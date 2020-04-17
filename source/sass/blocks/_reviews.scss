@@ -35,12 +35,32 @@
   margin-bottom: 39px;
 }
 
-.feedback__prev,
-.feedback__next {
+.feedback__button {
   width: 50%;
   min-height: 50px;
   border: 1px solid $bg-color--modal-size;
+  background: none;
+  cursor: pointer;
 }
+
+.feedback__button:hover .huge-arrow,
+.feedback__button:focus .huge-arrow {
+  opacity: 0.6;
+}
+
+.feedback__button:active .huge-arrow, {
+  opacity: 0.3;
+}
+
+.feedback__next {
+  border-left: none;
+}
+
+.huge-arrow {
+  fill: $color--main;
+}
+
+
 
 @media screen and (min-width: $width-tablet) {
   .reviews {
@@ -87,6 +107,10 @@
     order: -1;
     width: 175px;
     margin-bottom: 45px;
+  }
+
+  .feedback__button {
+    border: none;
   }
 }
 

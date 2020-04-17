@@ -50,12 +50,30 @@
 
 .main-promo__link {
   @include text-bold;
+  position: relative;
   display: inline-block;
   padding: 25px 130px 30px 0 ;
   font-size: 19px;
   line-height: 24px;
   color: $color--third;
 }
+
+.main-promo__svg {
+  position: absolute;
+  fill: $promo-svg-color;
+  opacity: 0.5;
+
+  &--interior {
+    top: 23px;
+    right: 6px;
+  }
+
+  &--toy {
+    top: 21px;
+    right: -3px;
+  }
+}
+
 
 @media (min-width: $width-tablet) {
   .main-promo {

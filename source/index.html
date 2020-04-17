@@ -34,11 +34,16 @@
       <ul class="main-nav__list user-list">
         <li class="nav-list__item user-list__item search">
           <a class="main-nav__link user-list__link search__link" href="#">
+            <svg aria-hidden="true" width="19px" height="18px" class="search__svg ">
+              <use xlink:href="img/svg/sprite.svg#search-icon"></use></svg>
             <span class="search__text">Поиск по сайту</span>
           </a>
         </li>
         <li class="nav-list__item user-list__item user-list__item__cart">
-          <a class="main-nav__link user-list__link main-cart" href="#">Корзина: <span class="link__text">пока
+          <a class="main-nav__link user-list__link main-cart" href="#">
+            <svg aria-hidden="true" width="21px" height="18px" class="cart__svg">
+            <use xlink:href="img/svg/sprite.svg#cart-icon"></use></svg>
+            Корзина: <span class="link__text">пока
               пуста</span></a>
         </li>
       </ul>
@@ -66,12 +71,17 @@
       <div class="main-promo__list">
         <div class="main-promo__item">
           <div class="promo-item__wrapper">
-            <a class="main-promo__link" href="#">Предметы интерьера</a>
+            <a class="main-promo__link" href="#">
+              <svg aria-hidden="true" width="40px" height="62px" class="main-promo__svg main-promo__svg--interior">
+                <use xlink:href="img/svg/sprite.svg#interior-icon"></use></svg>
+              Предметы интерьера</a>
           </div>
         </div>
         <div class="main-promo__item main-promo__item--toy">
           <div class="promo-item__wrapper">
-            <a class="main-promo__link" href="#">Детские игрушки</a>
+            <a class="main-promo__link" href="#">
+              <svg aria-hidden="true" width="60px" height="60px" class="main-promo__svg main-promo__svg--toy"><use xlink:href="img/svg/sprite.svg#toy-icon"></use></svg>
+              Детские игрушки</a>
           </div>
         </div>
       </div>
@@ -169,10 +179,12 @@
         </div>
 
           <div class="feedback__buttons">
-           <button class="feedback__prev">
+           <button class="feedback__button feedback__prev">
+             <svg aria-hidden="true" width="50px" height="26px" class="huge-arrow"><use xlink:href="img/svg/sprite.svg#huge-arrow-left"></use></svg>
             <span class="visually-hidden">Предыдущий отзыв</span>
            </button>
-           <button class="feedback__next">
+           <button class="feedback__button feedback__next">
+             <svg aria-hidden="true" width="50px" height="26px" class="huge-arrow"><use xlink:href="img/svg/sprite.svg#huge-arrow-right"></use></svg>
             <span class="visually-hidden">Следующий отзыв</span>
            </button>
           </div>
