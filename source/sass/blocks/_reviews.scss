@@ -43,21 +43,21 @@
   cursor: pointer;
 }
 
-.feedback__button:hover .huge-arrow,
-.feedback__button:focus .huge-arrow {
-  opacity: 0.6;
-}
-
-.feedback__button:active .huge-arrow, {
-  opacity: 0.3;
-}
-
 .feedback__next {
   border-left: none;
 }
 
 .huge-arrow {
   fill: $color--main;
+}
+
+.feedback__button:hover .huge-arrow,
+.feedback__button:focus .huge-arrow {
+  fill: lighten($color--main, 40%);
+}
+
+.feedback__button:active .huge-arrow {
+  fill: lighten($color--main, 70%);
 }
 
 
