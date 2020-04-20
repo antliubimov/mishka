@@ -63,8 +63,8 @@
 
 .main-promo__svg {
   position: absolute;
-  fill: $promo-svg-color;
-  opacity: 0.5;
+  fill: rgba($promo-svg-color, 50);
+
 
   &--interior {
     top: 23px;
