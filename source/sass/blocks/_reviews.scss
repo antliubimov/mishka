@@ -53,11 +53,11 @@
 
 .feedback__button:hover .huge-arrow,
 .feedback__button:focus .huge-arrow {
-  fill: rgba($color--main, 60);
+  fill: rgba($color--main, 0.6);
 }
 
 .feedback__button:active .huge-arrow {
-  fill: rgba($color--main, 30);
+  fill: rgba($color--main, 0.3);
 }
 
 @media screen and (min-width: $width-tablet) {

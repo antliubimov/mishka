@@ -37,6 +37,17 @@
 .contacts__mail {
   color: inherit;
   border-bottom: 1px solid $bg-color--first;
+
+  &:hover,
+  &:focus {
+    color: $bg-color--first;
+  }
+
+  &:active {
+    color: rgba($bg-color--first, 0.3);
+    border-color: rgba($bg-color--first, 0.3);
+  }
+
 }
 
 .contacts__map {

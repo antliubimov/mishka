@@ -22,7 +22,7 @@
   }
 
   &:active {
-    color: darken($color--third, 30%);
+    color: rgba($color--third, 0.3);
   }
 }
 
@@ -37,6 +37,6 @@
   }
 
   &:active {
-    color: darken($color--third, 30%);
+    color: rgba($color--third, 0.3);
   }
 }

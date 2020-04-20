@@ -54,11 +54,11 @@
 
   &:hover,
   &:focus {
-    color: rgba($color--main, 40);
+    color: rgba($color--main, 0.6);
   }
 
   &:active {
-    color: rgba($color--main, 70);
+    color: rgba($color--main, 0.3);
   }
 }
 
@@ -75,7 +75,7 @@
   position: absolute;
   top: 31px;
   left: 2px;
-  fill: rgba($color--main, 80);
+  fill: rgba($color--main, 0.2);
 }
 
 .main-cart {
@@ -86,7 +86,7 @@
   position: absolute;
   top: 30px;
   left: 0;
-  fill: rgba($color--main, 80);
+  fill: rgba($color--main, 0.2);
 }
 
 .main-nav__link:hover .search__svg,
@@ -98,7 +98,7 @@
 
 .main-nav__link:active .search__svg,
 .main-nav__link:active .cart__svg {
-  fill: rgba($bg-color--first, 30);
+  fill: rgba($bg-color--first, 0.3);
 }
 
 .main-nav__text {
