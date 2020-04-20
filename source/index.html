@@ -259,21 +259,15 @@
   <div class="modal-overlay modal-overlay--hidden">
     <div class="modal">
       <div class="modal__order">
-        <h3 class="modal__title">Добавить в корзину</h3>
+        <h3 class="modal__title">Добавить<br> в корзину</h3>
         <p class="modal__paragraph">Выберите размер:</p>
         <form class="modal__sizes" method="post" action="https://echo.htmlacademy.ru">
-          <label class="modal__size modal__size--checked">
-            <input class="modal__size-input visually-hidden" type="checkbox" checked>
-            S
-          </label>
-          <label class="modal__size">
-            <input class="modal__size-input visually-hidden" type="checkbox">
-            M
-          </label>
-          <label class="modal__size">
-            <input class="modal__size-input visually-hidden" type="checkbox">
-            L
-          </label>
+          <input id="size_s" class="modal__size-input visually-hidden" type="radio" value="size_s" name="size" checked>
+          <label class="modal__size modal__size--checked" for="size_s">S</label>
+          <input id="size_m" class="modal__size-input visually-hidden" type="radio" value="size_m" name="size">
+          <label class="modal__size" for="size_m">M</label>
+          <input id="size_l" class="modal__size-input visually-hidden" type="radio" value="size_l" name="size">
+          <label class="modal__size" for="size_l">L</label>
         </form>
         <button class="btn btn-modal" type="submit">Добавить</button>
       </div>

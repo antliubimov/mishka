@@ -36,8 +36,7 @@
 .modal__title {
   @include title-mobile;
   margin-bottom: 20px;
-  padding-right: 55px;
-  padding-left: 60px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -70,10 +69,10 @@
   &:focus {
     border-color: $bg-color--modal-size--hover;
   }
+}
 
-  &--checked {
-    border-color: $bg-color--modal-size--active;
-  }
+.modal__size-input:checked+.modal__size {
+  border-color: $bg-color--modal-size--active;
 }
 
 @media screen and (min-width: $width-tablet) {
