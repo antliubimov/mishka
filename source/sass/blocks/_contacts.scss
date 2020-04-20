@@ -61,7 +61,6 @@
 
 @media screen and (min-width: $width-tablet) {
   .contacts {
-    position: relative;
     padding-top: 63px;
     padding-bottom: 57px;
   }
@@ -102,6 +101,7 @@
 
 @media screen and (min-width: $width-desktop) {
   .contacts {
+    position: relative;
     padding-top: 140px;
     padding-bottom: 105px;
   }
@@ -123,6 +123,7 @@
     flex-direction: column;
   }
 
+  // TODO: сделать карту по другому
   .contacts__map {
     position: absolute;
     top: 71px;
