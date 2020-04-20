@@ -20,6 +20,15 @@
 .page-header__logo-image {
   width: 86px;
   height: 35px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
@@ -42,6 +51,15 @@
   padding-left: 46px;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover,
+  &:focus {
+    color: lighten($color--main, 40%);
+  }
+
+  &:active {
+    color: lighten($color--main, 70%);
+  }
 }
 
 .main-nav__text,
@@ -57,7 +75,7 @@
   position: absolute;
   top: 31px;
   left: 2px;
-  fill: rgba(0, 0, 0, 0.2);
+  fill: lighten($color--main, 80%);
 }
 
 .main-cart {
@@ -68,7 +86,19 @@
   position: absolute;
   top: 30px;
   left: 0;
-  fill: rgba(0, 0, 0, 0.2);
+  fill: lighten($color--main, 80%);
+}
+
+.main-nav__link:hover .search__svg,
+.main-nav__link:focus .search__svg,
+.main-nav__link:hover .cart__svg,
+.main-nav__link:focus .cart__svg {
+  fill: $bg-color--first;
+}
+
+.main-nav__link:active .search__svg,
+.main-nav__link:active .cart__svg {
+  fill: lighten($bg-color--first, 30%);
 }
 
 .main-nav__text {
@@ -86,13 +116,13 @@
   }
 
   .main-nav::before {
+    content: '';
     position: absolute;
     top: 89px;
     left: 49.59%;
     width: 99.225vw;
     height: 1px;
     margin-left: -50vw;
-    content: '';
     background-color: $bg-color--modal-size;
   }
 
