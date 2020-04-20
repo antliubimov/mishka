@@ -59,12 +59,20 @@
   font-size: 19px;
   line-height: 24px;
   color: $color--third;
+
+  &:hover,
+  &:focus {
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-promo__svg {
   position: absolute;
-  fill: rgba($promo-svg-color, 50);
-
+  fill: rgba($promo-svg-color, 0.5);
 
   &--interior {
     top: 23px;
@@ -77,6 +85,9 @@
   }
 }
 
+.main-promo__link:hover .main-promo__svg {
+  fill: rgba($promo-svg-color, 0.7)
+}
 
 @media (min-width: $width-tablet) {
   .main-promo {
