@@ -194,35 +194,40 @@
     </section>
 
     <section class="contacts">
-      <div class="wrapper contacts--inner">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__data">
-          <ul class="contacts__list">
-            <li class="contacts__item contacts__item--mail">
-              <span class="contact__name">e-mail:</span>
-              <a class="contacts__mail" href="#">info@mimimishkashop.ru</a>
-            </li>
-            <li class="contacts__item">
-              <span class="contact__name">адрес:</span>
-              <p class="contact__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>
-                д.19/8, офис 101</p>
-            </li>
-          </ul>
+      <div class="contacts__wrapper">
+        <div class="contacts--inner">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__data">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--mail">
+                <span class="contact__name">e-mail:</span>
+                <a class="contacts__mail" href="#">info@mimimishkashop.ru</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contact__name">адрес:</span>
+                <p class="contact__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>
+                  д.19/8, офис 101</p>
+              </li>
+            </ul>
+          </div>
+            <a href="#" class="contacts__btn contact__btn--desktop btn btn-primary">Напишите
+              нам</a>
+
         </div>
-      </div>
-      <div class="contacts__map">
-        <picture>
-          <source media="(min-width: 1150px)"
-                  srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-                  srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img src="img/map-mobile@1x.jpg" alt="Карта" srcset="img/map-mobile@2x.jpg 2x"
-               class="contacts__map__image">
-        </picture>
-      </div>
-      <div class="wrapper contacts__btn__wrapper">
-        <a href="#" class="contacts__btn btn btn-primary">Напишите
-          нам</a>
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" alt="Карта" srcset="img/map-mobile@2x.jpg 2x"
+                 class="contacts__map__image">
+          </picture>
+        </div>
+        <div class="wrapper contacts__btn__wrapper contacts__btn__wrapper--mobile-tablet">
+          <a href="#" class="contacts__btn btn btn-primary">Напишите
+            нам</a>
+        </div>
       </div>
     </section>
   </main>
