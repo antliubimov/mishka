@@ -3,6 +3,12 @@
   padding-bottom: 50px;
 }
 
+.reviews--inner {
+  width: $width-mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .reviews__title {
   @include title-mobile;
   margin-bottom: 24px;
@@ -62,14 +68,21 @@
 
 @media screen and (min-width: $width-tablet) {
   .reviews {
-    padding-top: 79px;
-    padding-bottom: 130px;
+    margin-bottom: 78px;
+    padding: 0;
   }
 
   .reviews--inner {
+    width: $width-tablet;
+    padding: 0 50px;
+    padding-top: 79px;
+    padding-bottom: 52px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url('../img/review@1x.jpg');
+    background-repeat: no-repeat;
   }
 
   .reviews__title {
@@ -114,11 +127,14 @@
 
 @media screen and (min-width: $width-desktop) {
   .reviews {
-    padding-top: 80px;
-    padding-bottom: 186px;
+    margin: 0;
   }
 
   .reviews--inner {
+    width: $width-desktop-wrap;
+    padding-top: 80px;
+    padding-right: 0;
+    padding-bottom: 186px;
     padding-left: 175px;
   }
 
