@@ -26,9 +26,11 @@
 .video__title:before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('');
+  top: 29px;
+  left: 33px;
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/svg/sprite.svg#icon-video');
   background-repeat: no-repeat;
 }
 
@@ -71,6 +73,11 @@
     margin-bottom: 7px;
     padding-left: 66px;
     font-size: 20px;
+  }
+
+  .video__title:before {
+    top: 17px;
+    left: 2px;
   }
 
   .video__title--mobile {
@@ -123,6 +130,11 @@
   .video__title {
     margin-bottom: 33px;
     padding: 0;
+  }
+
+  .video__title:before {
+    top: -54px;
+    left: 0;
   }
 
   .video__desc {
