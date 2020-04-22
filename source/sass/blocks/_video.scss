@@ -157,6 +157,10 @@
     left: 0;
   }
 
+  .video__media::before {
+    left: 292px;
+  }
+
   .video__desc {
     margin-bottom: 46px;
     padding: 0;
