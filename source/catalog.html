@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header class="page-header">
-  <nav class="main-nav">
+<header class="page-header">
+  <nav class="main-nav main-nav--closed main-nav--no-js">
     <div class="main-nav__top">
       <div class="main-nav__top--inner">
         <a href="index.html" class="page-header__logo">
@@ -20,7 +20,8 @@
             <img class="page-header__logo-image" src="img/svg/mishka-logo--mobile.svg" alt="Интернет-магазин Mishka">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span
+          class="visually-hidden">Открыть меню</span></button>
       </div>
     </div>
     <ul class="main-nav__list site-list">
@@ -34,11 +35,16 @@
     <ul class="main-nav__list user-list">
       <li class="nav-list__item user-list__item search">
         <a class="main-nav__link user-list__link search__link" href="#">
+          <svg aria-hidden="true" width="19px" height="18px" class="search__svg ">
+            <use xlink:href="img/svg/sprite.svg#search-icon"></use></svg>
           <span class="search__text">Поиск по сайту</span>
         </a>
       </li>
       <li class="nav-list__item user-list__item user-list__item__cart">
-        <a class="main-nav__link user-list__link main-cart" href="#">Корзина: <span class="link__text">пока
+        <a class="main-nav__link user-list__link main-cart" href="#">
+          <svg aria-hidden="true" width="21px" height="18px" class="cart__svg">
+            <use xlink:href="img/svg/sprite.svg#cart-icon"></use></svg>
+          Корзина: <span class="link__text">пока
               пуста</span></a>
       </li>
     </ul>
@@ -166,32 +172,35 @@
 
   <footer class="main-footer">
     <div class="wrapper main-footer__inner">
-      <a class="main-footer__logo" href="index.html">
+      <a class="main-footer__logo">
         <img src="img/svg/mishka-logo-footer.svg" alt="Интернет-магазин Mishka" class="main-footer__logo-img">
       </a>
       <ul class="main-footer__social social__list">
         <li class="social__item">
           <a class="social__link" href="#">
+            <svg aria-hidden="true" width="22px" height="22px" class="social__svg"><use xlink:href="img/svg/sprite.svg#social-instagram"></use></svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
+            <svg aria-hidden="true" width="14.96px" height="27.72px" class="social__svg"><use xlink:href="img/svg/sprite.svg#social-facebook"></use></svg>
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
+            <svg aria-hidden="true" width="23.49px" height="20.17px" class="social__svg"><use xlink:href="img/svg/sprite.svg#social-twitter"></use></svg>
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
-      <p class="footer-copyright">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru">
         <b class="footer-copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ry">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
-      </p></div>
+        <svg aria-hidden="true" width="40px" height="40px" class="footer-copyright__svg"><use xlink:href="img/svg/sprite.svg#htmlacademy"></use></svg>
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
   </footer>
 
   <div class="modal-overlay modal-overlay--hidden">
@@ -217,7 +226,7 @@
       </div>
     </div>
   </div>
-
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
