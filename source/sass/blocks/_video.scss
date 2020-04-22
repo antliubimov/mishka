@@ -23,7 +23,7 @@
   line-height: 24px;
 }
 
-.video__title:before {
+.video__title::before {
   content: '';
   position: absolute;
   top: 29px;
@@ -36,6 +36,21 @@
 
 .video__title--other {
   display: none;
+}
+
+.video__media {
+  position: relative;
+}
+
+.video__media::before {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: 79px;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/svg/sprite.svg#play-button-icon');
+  background-repeat: no-repeat;
 }
 
 .video__img {
@@ -86,6 +101,11 @@
 
   .video__title--other {
     display: block;
+  }
+
+  .video__media::before {
+    top: 178px;
+    left: 284px;
   }
 
   .video__img {
