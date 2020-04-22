@@ -73,16 +73,18 @@
   }
 
   .reviews--inner {
-    width: $width-tablet;
-    padding: 0 50px;
-    padding-top: 79px;
-    padding-bottom: 52px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: $width-tablet;
+    padding: 0 50px;
+    padding-top: 79px;
+    padding-bottom: 52px;
     background-image: url('../img/review@1x.jpg');
     background-repeat: no-repeat;
+    @media screen and (min-resolution: 144dpi), screen and (min-resolution: 1.5dppx) {
+      background-image: url('../img/review@2x.jpg');
   }
 
   .reviews__title {
