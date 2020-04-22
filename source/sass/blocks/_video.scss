@@ -15,11 +15,21 @@
 
 .video__title {
   @include text-bold;
+  position: relative;
   padding-top: 22px;
   padding-bottom: 26px;
   padding-left: 89px;
   font-size: 17px;
   line-height: 24px;
+}
+
+.video__title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('');
+  background-repeat: no-repeat;
 }
 
 .video__title--other {
