@@ -90,6 +90,15 @@
 
 .order__label {
   @include text-bold;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $bg-color--first;
+  }
+
+  &:active::before {
+    border-color: rgba($color--main, 0.3);
+  }
 }
 
 .radio__label,
@@ -107,34 +116,34 @@
 }
 
 .radio__label::before {
+  content: '';
   position: absolute;
   top: -9px;
   left: 0;
   width: 39px;
   height: 39px;
-  content: '';
   border: 2px solid $color--main;
   border-radius: 50%;
 }
 
 .radio__input:checked + .radio__label::after {
+  content: '';
   position: absolute;
   top: 3px;
   left: 12px;
   width: 16px;
   height: 16px;
-  content: '';
   border-radius: 50%;
   background-color: $bg-color--modal-size--active;
 }
 
 .checkbox__label::before {
+  content: '';
   position: absolute;
   top: -11px;
   left: 0;
   width: 40px;
   height: 39px;
-  content: '';
   border: 2px solid $color--main;
 }
 
@@ -215,6 +224,7 @@
   .order__field--color::before,
   .order__field--tel::before,
   .order__field--mail::before {
+    content: '';
     position: absolute;
     z-index: -1;
     right: 50%;
@@ -223,7 +233,6 @@
     height: 100%;
     margin-right: -50vw;
     margin-left: -50vw;
-    content: '';
     background-color: $bg-color--footer;
   }
 
