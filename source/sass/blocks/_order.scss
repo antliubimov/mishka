@@ -167,6 +167,16 @@
   padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid $color--main;
+  color: $color--slave;
+
+  &:hover,
+  &:focus{
+    border-bottom-color: $bg-color--modal-size--active;
+  }
+
+  &::placeholder {
+    color: rgba($color--slave, 0.7);
+  }
 }
 
 .order__addition {
@@ -174,6 +184,11 @@
   padding: 15px;
   font: inherit;
   border: 2px solid $color--main;
+
+  &:hover,
+  &:focus{
+    border-color: $bg-color--modal-size--active;
+  }
 }
 
 .form__footnote {
@@ -327,8 +342,8 @@
     width: 240px;
   }
 
-  .checkbox__label:nth-child(2n + 1) {
-    margin-right: 21px;
+  .checkbox__label:nth-child( 4n+2 ) {
+    margin-right: 20px;
   }
 
   .checkbox__label::before {
@@ -339,6 +354,13 @@
 
   .checkbox__label:not( :last-child ) {
     margin-bottom: 58px;
+  }
+
+  .checkbox__input:checked + .checkbox__label::after {
+    top: -3px;
+    left: 11px;
+    width: 32px;
+    height: 33px;
   }
 
   .order__addition {
@@ -379,6 +401,7 @@
   }
 
   .checkbox__label {
+    width: 242px;
     margin-right: 21px;
   }
 
