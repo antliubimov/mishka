@@ -7,7 +7,6 @@
 .main-nav__top {
   display: flex;
   align-items: center;
- // min-height: 78px;
   border-top: 1px solid $bg-color--modal-size;
   border-bottom: 1px solid $bg-color--modal-size;
 }
@@ -86,7 +85,6 @@
     width: 26px;
     height: 2px;
     background-color: $color--main;
-
   }
 
   &::before {
@@ -121,6 +119,20 @@
   .main-nav--opened .user-list {
     display: block;
   }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--no-js .main-nav__wrapper {
+  position: static;
+  height: auto;
+}
+
+.main-nav--no-js .site-list,
+.main-nav--no-js .user-list {
+  display: block;
 }
 
 .main-nav__list {
