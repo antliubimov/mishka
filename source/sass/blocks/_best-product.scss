@@ -83,6 +83,17 @@
   .best-product__inner {
     position: relative;
     flex-wrap: wrap;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -57px;
+      left: -12px;
+      width: 100vw;
+      height: 24px;
+      background-image: url('../img/svg/zigzag-fill-tablet.svg');
+      background-repeat: repeat;
+    }
   }
 
   .best-product__top {
@@ -107,7 +118,6 @@
   .best-product__description,
   .best-product__buy {
     width: 291px;
-    //padding-right: 43px;
   }
 
   .best-product__description {
@@ -150,7 +160,15 @@
     padding-bottom: 96px;
   }
 
-  .best-product__inner {}
+  .best-product__inner {
+    &::before {
+      top: -140px;
+      left: -37px;
+      height: 34px;
+      background-image: url('../img/svg/zigzag-fill-desktop.svg');
+      background-repeat: repeat;
+    }
+  }
 
   .best-product__top {
     margin-bottom: 48px;
