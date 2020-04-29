@@ -163,7 +163,7 @@
     padding-top: 60px;
     padding-bottom: 90px;
 
-    &:before {
+    &::before {
       top: -22px;
       height: 23px;
       background-image: url('../img/svg/zigzag-line-desktop.svg');

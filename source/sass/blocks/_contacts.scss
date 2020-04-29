@@ -81,8 +81,20 @@
 
 @media screen and (min-width: $width-tablet) {
   .contacts {
+    position: relative;
     padding-top: 63px;
     padding-bottom: 57px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 16px;
+      background-image: url('../img/svg/zigzag-line-tablet.svg');
+      background-repeat: repeat;
+    }
   }
 
   .contacts--inner {
@@ -143,6 +155,12 @@
   .contacts {
     padding-top: 70px;
     padding-bottom: 105px;
+
+    &::before {
+      top: -23px;
+      height: 23px;
+      background-image: url('../img/svg/zigzag-line-desktop.svg');
+    }
   }
 
   .contacts__wrapper {
