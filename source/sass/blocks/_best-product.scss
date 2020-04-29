@@ -88,8 +88,8 @@
       content: '';
       position: absolute;
       top: -57px;
-      left: -12px;
-      width: 100vw;
+      left: 0;
+      width: 100%;
       height: 24px;
       background-image: url('../img/svg/zigzag-fill-tablet.svg');
       background-repeat: repeat;
@@ -163,10 +163,8 @@
   .best-product__inner {
     &::before {
       top: -140px;
-      left: -37px;
       height: 34px;
       background-image: url('../img/svg/zigzag-fill-desktop.svg');
-      background-repeat: repeat;
     }
   }
 
